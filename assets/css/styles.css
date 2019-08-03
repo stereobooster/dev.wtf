@@ -1,0 +1,256 @@
+/* https://www.npmjs.com/package/postcss-normalize */
+@import-normalize;
+
+/* theme colors */
+:root {
+  --text: #333;
+  --primary: #f012be;
+}
+
+html,
+body {
+  font: 16px/1.6;
+  /* System Fonts as used by Medium and WordPress */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  hyphens: auto;
+  color: var(--text);
+}
+
+/**
+ * Vertical rhythm by Syncope
+ * http://nowodzinski.pl/syncope
+ */
+h1 {
+  font-size: 3.19em;
+  line-height: 1.02em;
+  padding-top: 0.176em;
+  margin-bottom: 0.333em;
+}
+
+h2 {
+  font-size: 2.38em;
+  line-height: 1.37em;
+  padding-top: 0.342em;
+  margin-bottom: 0.342em;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.86em;
+  padding-top: 0.571em;
+  margin-bottom: 0.357em;
+}
+
+h4 {
+  font-size: 1.31em;
+  line-height: 1.24em;
+  padding-top: 0.286em;
+  margin-bottom: 0.952em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.63em;
+  padding-top: 0.5em;
+  margin-bottom: 1.13em;
+}
+
+body {
+  /* remove margin, because we will provide spacing for .content */
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+.content {
+  border-top: 0.5em solid var(--primary);
+  /* padding on small devices */
+  padding: 0 0.75em 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content .img,
+.content .highlight {
+  /* undo padding on small devices */
+  margin: 0 -0.75em;
+  /* responsive image and highlighted code */
+  width: calc(100% + 2 * 0.75em);
+  height: auto;
+}
+
+.content .simg {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+@media (min-width: 40em) {
+  .content {
+    width: 40em;
+    margin: 0 auto;
+    padding: 0 0 3em;
+  }
+
+  .content .img,
+  .content .highlight {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+blockquote {
+  margin-inline-start: 1.5em;
+  margin-inline-end: 1.5em;
+
+  padding-left: 0.5em;
+  border-left: 0.5em solid #d9d9d9;
+  color: #444;
+}
+
+aside {
+  color: #444;
+  font-size: 0.9em;
+}
+
+kbd {
+  /* inspired by Github */
+  font-size: 0.8em;
+  padding: 2px 0.5em;
+  border: solid 1px #d9d9d9;
+  border-radius: 3px;
+  background-color: #fefefe;
+  box-shadow: rgb(149, 157, 165) -1px -1px 0px 0px inset;
+}
+
+code {
+  /* from create-react-app */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  /* inspired by Github */
+  font-size: 0.75em;
+  padding: 1px 2px;
+  /* border: solid 1px #d9d9d9; */
+  border-radius: 3px;
+  background-color: #f0f3f2;
+}
+
+pre {
+  overflow-x: scroll;
+  display: block;
+}
+
+.highlight pre {
+  padding: 0.75em;
+  line-height: 1.5em;
+}
+
+.highlight code {
+  /* undo code styling above */
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.highlight .ln {
+  /* line numbers are not selectable */
+  user-select: none;
+}
+
+a {
+  color: #0074d9;
+}
+a:visited {
+  color: #85144b;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+nav {
+  padding: 0.5em 0;
+}
+
+nav .prev,
+nav a {
+  margin-right: 1em;
+}
+
+.img svg,
+.img img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.img svg {
+  /* I have no idea where those 3px from */
+  margin-bottom: -3px;
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nojs .img .lazyload {
+  display: none;
+}
+
+.consent {
+  border: 1px solid var(--text);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+button {
+  min-width: 1cm;
+  min-height: 1cm;
+  margin-right: 2em;
+}
+
+.cookie {
+  padding: 0.5em 1em;
+  background: #f0f3f2;
+  margin: 0 -0.75em;
+}
+
+@media (min-width: 40em) {
+  .cookie {
+    margin: 0;
+  }
+}
+
+.license {
+  font-size: 0.8em;
+}
+
+table {
+  border-spacing: 0;
+  border-bottom: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+}
+
+td, th {
+  border-top: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  padding: 0.5rem;
+}
+
+th {
+  background: #f0f3f3
+}

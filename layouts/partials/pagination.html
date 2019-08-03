@@ -1,0 +1,22 @@
+<nav>
+    {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+        {{ if .Paginator.HasPrev }}
+        <a href="{{.Paginator.Prev.URL}}" class="prev">
+            <span aria-hidden="true">←</span> {{ with .Site.Params.newerPosts }}{{ . }}{{ else }}Newer posts{{ end }}
+        </a>
+        {{ else}}
+        <span class="prev" aria-hidden="true">
+            ← No newer posts
+        </span>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+        <a href="{{.Paginator.Next.URL}}" class="next">
+            {{ with .Site.Params.olderPosts }}{{ . }}{{ else }}Older posts{{ end }} <span aria-hidden="true">→</span>
+        </a>
+        {{ else}}
+        <span class="next" aria-hidden="true">
+            No older posts →
+        </span>
+        {{ end }}
+    {{ end }}
+</nav>

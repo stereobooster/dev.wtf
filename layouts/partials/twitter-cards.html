@@ -1,0 +1,34 @@
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
+{{ with .Site.Params.twitter }}
+  <meta name="twitter:site" content="@{{ . }}"/>
+{{ end }}
+{{ if .IsPage }}
+  {{ if (isset .Params "cover_image") }}
+    {{ $cover_image := printf "*%s*" .Params.cover_image }}
+    {{ $src := .Page.Resources.GetMatch ($cover_image) }}
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="{{ $src.Permalink }}"/>
+  {{ else }}
+    <meta name="twitter:card" content="summary"/>
+  {{ end }}
+  <!-- Twitter Card data -->
+  {{ range .Site.Authors }}
+    {{ with .twitter }}
+      <meta name="twitter:creator" content="@{{ . }}"/>
+    {{ end }}
+  {{ end }}
+  <!-- no post authors, show site author -->
+  {{ if eq (len .Site.Authors) 0 }}
+    <meta name="twitter:creator" content="@{{ .Site.Params.author }}"/>
+  {{ end }}
+{{ else }}
+  <meta name="twitter:card" content="summary" />
+  {{ with .Site.Params.author }}
+    <meta name="twitter:creator" content="@{{ . }}"/>
+  {{ end }}
+  {{ if .Site.Params.twitterCardImage }}
+    <meta name="twitter:image" content="{{ .Site.Params.twitterCardImage | absURL }}" />
+  {{ end }}
+{{ end }}

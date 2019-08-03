@@ -1,0 +1,78 @@
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block;
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
+.resp-sharing-button__link:visited {
+  color: #fff;
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top;
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none;
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none;
+}
+
+.resp-sharing-button--twitter {
+  background-color: #1d8cec;
+  border-color: #1d8cec;
+}
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #1d8becdd;
+  background-color: #1d8becdd;
+}
+
+.resp-sharing-button--reddit {
+  background-color: #fb2c08;
+  border-color: #fb2c08;
+}
+
+.resp-sharing-button--reddit:hover,
+.resp-sharing-button--reddit:active {
+  background-color: #fb2c08dd;
+  border-color: #fb2c08dd;
+}
+
+.resp-sharing-button--hackernews {
+  background-color: #fb4f08;
+  border-color: #fb4f08;
+}
+
+.resp-sharing-button--hackernews:hover,
+.resp-sharing-button--hackernews:active {
+  background-color: #fb4f08dd;
+  border-color: #fb4f08dd;
+}

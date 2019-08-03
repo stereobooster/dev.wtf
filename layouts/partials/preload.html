@@ -1,0 +1,10 @@
+
+
+{{/*  We only want to run this process if there's a JS file  */}}
+{{ if (fileExists "./assets/output/index.js") }}
+  {{ $js := resources.Get "output/index.js" }}
+  {{ with $js }}
+    {{ $secureJS := . | resources.Fingerprint }}
+    <link rel="preload" href="{{ $secureJS.Permalink }}" as="script" />
+  {{ end }}
+{{ end }}

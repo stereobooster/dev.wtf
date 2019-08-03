@@ -1,0 +1,74 @@
+# code highlining
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsOptions = "linenos=inline"
+
+# Site settings
+baseurl = "https://stereobooster.com/"
+# for <html lang={}>
+languageCode = "en"
+title = "dev.wtf"
+
+Paginate = 5
+
+[params]
+  # twitter:creator
+  # <meta name="author">
+	# author = ""
+	# twitter:description
+	# <meta name="description"
+	# description = "Site Description"
+
+	# twitter:site
+	# twitter = ""
+
+	enableRSS = true
+	enableToc = false
+
+	enableSummary = true
+	# Set the value to true if use description in post front matter replace content summary
+	useDescriptionReplaceSummary = false
+
+  # googleAnalytics = ""
+
+	# The url for twitter card image, default is avatar.png in static/images directory
+	twitterCardImage = ""
+
+	themeColor = "#f012be"
+
+	# edit this page
+	githubUsername = "stereobooster"
+	githubRepo = "dev.wtf"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.instagram]
+    disable = true
+    simple = true
+  [privacy.twitter]
+    disable = true
+    enableDNT = true
+    simple = true
+  [privacy.vimeo]
+    disable = true
+    simple = true
+  [privacy.youtube]
+    disable = true
+    privacyEnhanced = true
+
+[related]
+  threshold = 90.0
+  includeNewer = true
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100.0
+  [[related.indices]]
+    name = "date"
+    weight = 0.0

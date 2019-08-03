@@ -1,0 +1,27 @@
+{{/* https://discourse.gohugo.io/t/marking-up-json-ld/1154 */}}
+{{ if .IsPage }}
+{{ if eq .Type "posts" }}
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "articleSection" : "{{ .Section }}",
+    "name" : "{{ .Title | safeJS }}",
+    "headline" : "{{ .Title | safeJS }}",
+    "description" : "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
+    "inLanguage" : "en-US",
+    "author" : "{{ .Site.Params.author }}",
+    "creator" : "{{ .Site.Params.author }}",
+    "copyrightHolder" : "{{ .Site.Params.author }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "datePublished" : "{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}",
+    "publisher": "stereobooster.com",
+    {{/* "logo": "{{ if isset .Site.Params "favicon" }}{{ .Site.Params.favicon | absURL }}{{ end }}", */}}
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",
+    {{ if .Params.image }}"image" : "{{ .Params.image | absURL }}",{{ end }}
+    "keywords" : [ "{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" ]
+}
+</script>
+{{ end }}
+{{ end }}

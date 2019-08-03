@@ -1,0 +1,43 @@
+{{ define "main" }}
+    <article>
+        <header>
+            {{/*
+              shortcodes don't work here https://discourse.gohugo.io/t/resolve-relative-to-file-path-in-shortcodes/8362
+              so we need to duplicate logic of shortcode in partial
+            */}}
+            {{ partial "img-header.html" . }}
+            <h1>
+                {{ .Title }}
+            </h1>
+            <aside>
+            {{ .Date.Format "Jan 2, 2006 15:04" }}
+            · {{ .ReadingTime }} minute read
+            {{ with .Params.tags }}
+              {{ if ge (len .) 1 }}
+              · {{ range . }}
+                  <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">{{ . }}</a>
+                {{ end }}
+              {{ end }}
+            {{ end}}
+            </aside>
+        </header>
+        {{ if and (gt .WordCount 500 ) (.Site.Params.enableToc) }}
+          {{ if .TableOfContents }}
+            <div>
+              {{ .TableOfContents }}
+            </div>
+          {{ end }}
+        {{ end }}
+        <section>
+          {{ .Content }}
+        </section>
+        <footer>
+          <p>
+          {{ partial "discuss.html" . }}
+          {{ partial "related.html" . }}
+          {{ partial "edit.html" . }}
+          </p>
+          {{ partial "share.html" . }}
+        </footer>
+    </article>
+{{ end }}

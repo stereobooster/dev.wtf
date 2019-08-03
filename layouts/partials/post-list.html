@@ -1,0 +1,27 @@
+{{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+{{ $url := replace .Permalink .Site.BaseURL "" }}
+    <article>
+        <h2><a href='{{ .Permalink }}'>{{ .Title }}</a></h2>
+        <p>
+            {{ if .Site.Params.enableSummary }}
+                {{ if .Site.Params.useDescriptionReplaceSummary }}
+                    {{ .Description | plainify }}
+                {{ else }}
+                    {{ .Summary | plainify | htmlUnescape }}
+                {{ end }}
+            {{ end }}
+        </p>
+
+        <aside>
+        {{ .Date.Format "Jan 2" }}
+        · {{ .ReadingTime }} minute read
+        {{ with .Params.tags }}
+            {{ if ge (len .) 1 }}
+            · {{ range . }}
+                <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">{{ . }}</a>
+            {{ end }}
+            {{ end }}
+        {{ end}}
+        </aside>
+    </article>
+{{ end }}

@@ -1,0 +1,11 @@
+<meta property="og:title" content="{{ .Title }}"/>
+<meta name="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ if .IsPage }}
+  {{ if (isset .Params "cover_image") }}
+    {{ $cover_image := printf "*%s*" .Params.cover_image }}
+    {{ $src := .Page.Resources.GetMatch ($cover_image) }}
+    <meta property="og:image"content="{{ $src.Permalink }}"/>
+  {{ end }}
+  <meta property="og:type" content="article" />
+{{ end }}

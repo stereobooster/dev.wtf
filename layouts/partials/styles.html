@@ -1,0 +1,4 @@
+{{/* inline css https://discourse.gohugo.io/t/hugo-inline-css-optimization-for-google-pagespeed/6032/21 */}}
+{{ with resources.Get "output/index.css" | minify }}
+<style>{{ .Content | safeCSS }}</style>
+{{ end }}

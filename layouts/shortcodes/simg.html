@@ -1,0 +1,18 @@
+{{/* simple image */}}
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+<img
+  class="lazyload simg"
+  data-src="{{ $src.RelPermalink }}"
+  {{ with .Get "width" }}width="{{ . }}"{{ end }}
+  {{ with .Get "height" }}height="{{ . }}"{{ end }}
+  {{ with .Get "alt" }}alt='{{.}}'{{ end }}>
+<noscript>
+  <img
+    class="simg"
+    loading="lazy"
+    src="{{ $src.RelPermalink }}"
+    {{ with .Get "width" }}width="{{ . }}"{{ end }}
+    {{ with .Get "height" }}height="{{ . }}"{{ end }}
+    {{ with .Get "alt" }}alt='{{.}}'{{ end }}>
+</noscript>

@@ -1,0 +1,10 @@
+<!-- https://github.com/stereobooster/an-almost-static-stack/blob/react-snap/src/components/Seo.js -->
+{{ with  .Site.Params.themeColor }}<meta name="theme-color" content="{{ . }}"/> {{ end }}
+<title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &mdash; {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
+{{ partial "twitter-cards.html" . }}
+{{ partial "json-ld.html" . }}
+{{ partial "opengraph.html" . }}
+{{ if .Site.Params.enableRSS }}
+<link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
