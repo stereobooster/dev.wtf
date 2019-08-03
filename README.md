@@ -47,7 +47,7 @@ I struggle to find some basics explained, people often skip explaining basics an
 
 There is a good piece on that matter - [Fundamental Concepts in Programming Languages](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.332.3161&rep=rep1&type=pdf) by Christopher Strachey, but it is from 1967 (a lot of things are still relevant, but some terminology is outdated).
 
-### Concistency
+### Consistency
 
 Different programming languages use different terminology to represent the same concept, for example, vector, array, list, queue all can mean the same (or not). It would be nice to reach some consistency and to be able to list correspondence between different languages, (so-called [Rosetta Stone](http://rosettacode.org/wiki/Rosetta_Code:About)).
 
