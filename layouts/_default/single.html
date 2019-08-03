@@ -10,8 +10,6 @@
                 {{ .Title }}
             </h1>
             <aside>
-            {{ .Date.Format "Jan 2, 2006 15:04" }}
-            · {{ .ReadingTime }} minute read
             {{ with .Params.tags }}
               {{ if ge (len .) 1 }}
               · {{ range . }}
@@ -37,7 +35,6 @@
           {{ partial "related.html" . }}
           {{ partial "edit.html" . }}
           </p>
-          {{ partial "share.html" . }}
         </footer>
     </article>
 {{ end }}
