@@ -89,28 +89,28 @@ Some examples of subjects that reference may cover (or may not, because this is 
 - Computer science terminology: array, closure
 - Development terminology: console, server
 - Acronyms: a11y (accessibility), l10n (localization)
-- Phenomena jargon: bike-shading, gate-keeping, 10x
+- Phenomena jargon: bikeshedding, gatekeeping, 10x
 - Professional jargon: vulns (vulnerabilities), repo (repository)
-- Internet shortenings and emojis: thx (thanks), `(╯°□°)╯︵ ┻━┻` ( flip table)
+- Internet shortenings and emojis: thx (thanks), `(╯°□°)╯︵ ┻━┻` (flip table)
 
 ## Details
 
 Each article composed of at least title and definition. Optional parameters:
 
 - cover image: for social networks
- - can be generated automatically. like they do for dev.to
+  - can be generated automatically. like they do for dev.to
 - tags
 - related - related articles
 - aka - other names for the terms
- - can be used to generate redirect pages
+  - can be used to generate redirect pages
 
 ## How can I help?
 
-- Ask questions. If you find some terminology confusing open issue asking for an explanation
-- Answer questions. Send pull requests with answers
+- [Ask questions](https://github.com/stereobooster/dev.wtf/issues). If you find some terminology confusing open issue asking for an explanation
+- [Answer questions](https://github.com/stereobooster/dev.wtf/new/master/content/posts). Send pull requests with answers
 - Edit language. Some authors will appreciate help in fixing typos and errors
 - Add pictures. You don't have to be a developer to contribute, you can help by providing cover images and helping with design-related things
-- Improve code. Do you have an idea on how to improve the website? Please send PR.
+- [Improve code](https://github.com/stereobooster/dev.wtf). Do you have an idea on how to improve the website? Please send PR.
 
 ## Other ideas
 
