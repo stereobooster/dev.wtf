@@ -4,7 +4,7 @@ pygmentsUseClasses = true
 pygmentsOptions = "linenos=inline"
 
 # Site settings
-baseurl = "https://stereobooster.com/"
+baseurl = "https://devwtf.netlify.com/"
 # for <html lang={}>
 languageCode = "en"
 title = "dev.wtf"
