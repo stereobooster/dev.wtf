@@ -76,7 +76,7 @@ The idea is to give correct definitions for computer science terminology, but we
 
 This will be an opensource project. A static website generated from markdown files with front matter, same concept as Jekyll, Hugo or Gatsby.
 
-For now, the source will be hosted at Github, so anybody with Github account would be able to contribute the content.
+For now, the [source will be hosted at Github](https://github.com/stereobooster/dev.wtf), so anybody with Github account would be able to contribute the content.
 
 ### Implementation
 
@@ -131,6 +131,6 @@ I need to mention that Sara Vieira, best developer avocado I know, had the [same
 
 ## License
 
-Content is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+Content is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/) unless stated otherwise.
 
 Code is licensed under [MIT](https://opensource.org/licenses/MIT).
