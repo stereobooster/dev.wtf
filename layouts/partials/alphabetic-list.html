@@ -1,0 +1,22 @@
+<!-- https://discourse.gohugo.io/t/lists-of-content-divided-by-posts-first-letter/8534/2 -->
+<!-- create a list with all uppercase letters -->
+{{ $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
+
+<!-- range all pages sorted by their title -->
+{{ range .Data.Pages.ByTitle }}
+  <!-- get the first character of each title. Assumes that the title is never empty! -->
+  {{ $firstChar := substr .Title 0 1 | upper }}
+
+  <!-- in case $firstChar is a letter -->
+  {{ if $firstChar | in $letters }}
+    <!-- get the current letter -->
+    {{ $curLetter := $.Scratch.Get "curLetter" }}
+    <!-- if $curLetter isn't set or the letter has changed -->
+    {{ if ne $firstChar $curLetter }}
+    <!-- update the current letter and print it -->
+      {{ $.Scratch.Set "curLetter" $firstChar }}
+      <h2>{{ $firstChar }}</h2>
+    {{ end }}
+    <div><a href='{{ .Permalink }}'>{{ .Title }}</a></div>
+  {{ end }}
+{{ end }}
