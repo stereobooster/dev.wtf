@@ -4,13 +4,14 @@ date: 2019-08-03T09:01:40+02:00
 draft: false
 ---
 
-Any seemingly pointless activity which is actually necessary to solve a problem which solves a problem which, several levels of recursion later, solves the real problem you're working on.
+The term was coined by Carlin J. Vieri, a Ph.D. at MIT back in the 90s.
 
-[MIT AI Lab, after 2000: orig. probably from a Ren & Stimpy episode.]
+> Yak shaving is what you are doing when you're doing some stupid, fiddly little task that bears no obvious relationship to what you're supposed to be working on, but yet a chain of twelve causal relations links what you're doing to the original meta-task.
 
-Source: [The Jargon File (version 4.4.7)](http://www.catb.org/~esr/jargon/html/Y/yak-shaving.html)
+Source: [Yak Shaving Defined - I'll get that done, as soon as I shave this yak.](https://www.hanselman.com/blog/YakShavingDefinedIllGetThatDoneAsSoonAsIShaveThisYak.aspx)
 
-## Related
+### Related
 
 - [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves/)
 - [Rabbit Hole](https://www.urbandictionary.com/define.php?term=Rabbit%20Hole)
+- [Useful tech terms: Yak Shaving, Technical Debt, Bikeshedding](https://phinze.blog/2014/05/24/useful-tech-terms-part-1.html)

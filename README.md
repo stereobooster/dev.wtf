@@ -19,6 +19,7 @@ I imagine it like a mix of urbandictionary for developers and encyclopedia of th
 - [emojipedia](https://emojipedia.org/) all you want to know about emojis
 - [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon) - about functional terminology
 - [WikiWikiWeb](http://wiki.c2.com/) - some interesting opinions about software development
+- [The Jargon File](http://www.catb.org/~esr/jargon/html/go01.html) - a comprehensive compendium of hacker slang illuminating many aspects of hackish tradition, folklore, and humor
 
 (do you know good alternatives? please let me know)
 
