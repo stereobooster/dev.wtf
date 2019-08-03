@@ -1,5 +1,7 @@
 # dev.wtf
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/56042058-f77b-4bfd-a9a6-edd42683528a/deploy-status)](https://app.netlify.com/sites/devwtf/deploys)
+
 ## tools
 
 ### development
