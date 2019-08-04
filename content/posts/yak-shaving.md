@@ -10,6 +10,10 @@ The term was coined by Carlin J. Vieri, a Ph.D. at MIT back in the 90s.
 
 Source: [Yak Shaving Defined - I'll get that done, as soon as I shave this yak.](https://www.hanselman.com/blog/YakShavingDefinedIllGetThatDoneAsSoonAsIShaveThisYak.aspx)
 
+Example: Hal fixing a light bulb (from Malcolm in the Middle S03E06 - Health Scare)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AbSehcT19u0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Related
 
 - [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves/)
