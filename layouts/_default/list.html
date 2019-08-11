@@ -1,16 +1,5 @@
 {{ define "main" }}
 	<section >
-		{{ range .Data.Pages.GroupByDate "2006" }}
-		<div >
-			<h3>{{ .Key }}</h3>
-			<ul>
-					{{ range .Pages }}
-					<li>
-						<a href="{{ .Permalink }}">{{ .Title }}</a>,  {{ .Date.Format "Jan 2" }}
-					</li>
-					{{ end }}
-			</ul>
-		</div>
-		{{ end }}
+		{{ partial "alphabetic-list.html"  . }}
 	</section>
 {{ end }}

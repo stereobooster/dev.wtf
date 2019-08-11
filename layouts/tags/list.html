@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article>
+  <header>
+    {{/*
+      shortcodes don't work here https://discourse.gohugo.io/t/resolve-relative-to-file-path-in-shortcodes/8362
+      so we need to duplicate logic of shortcode in partial
+    */}}
+    {{ partial "img-header.html" . }}
+    <h1>
+        {{ .Title }}
+    </h1>
+  </header>
+  {{ if .Content }}
+    <section>
+      {{ .Content }}
+    </section>
+  {{ end }}
+</article>
+<section>
+  {{ partial "alphabetic-list.html"  . }}
+</section>
+<footer>
+  <p>
+  {{ partial "discuss.html" . }}
+  {{ partial "edit.html" . }}
+  </p>
+</footer>
+{{ end }}
