@@ -9,7 +9,7 @@ baseurl = "https://devwtf.netlify.com/"
 languageCode = "en"
 title = "dev.wtf"
 
-Paginate = 5
+# Paginate = 5
 
 [params]
   # twitter:creator
