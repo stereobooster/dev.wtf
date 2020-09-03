@@ -28,7 +28,7 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {
-    "lazysizes": "^5.1.0",
+    "lazysizes": "^5.2.1",
     "quicklink": "^1.0.0"
   },
   "browserslist": [
