@@ -14,6 +14,7 @@ I imagine it like a mix of urbandictionary for developers and encyclopedia of th
 
 "But there are a lot of alternatives" you may think, for example:
 
+- [Data Glossary](https://github.com/airbytehq/glossary)
 - [Self-Defined Dictionary](https://github.com/tatianamac/selfdefined) A modern dictionary about us. We define our words, but they don't define us.
 - [urbandictionary](https://www.urbandictionary.com/) is great for phenomena jargon, but not developer specific
 - [MDN](https://developer.mozilla.org) is a great resource, but it scoped to browser/JS specific subjects
