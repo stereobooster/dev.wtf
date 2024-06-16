@@ -1,6 +1,6 @@
 # dev.wtf
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/56042058-f77b-4bfd-a9a6-edd42683528a/deploy-status)](https://app.netlify.com/sites/devwtf/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ab74cdba-e001-476f-9c21-fbe36c721e26/deploy-status)](https://app.netlify.com/sites/devwtf/deploys)
 
 ## WTF developers are talking about?
 
