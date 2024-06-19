@@ -124,14 +124,6 @@ Each article composed of at least title and definition. Optional parameters:
 
 I need to mention that Sara Vieira, best developer avocado I know, had the [same idea](https://github.com/SaraVieira/webdev.wtf/issues/1).
 
-## Development
-
-- [Hugo](http://gohugo.io/) - A general-purpose website framework—written in Go—that generates static webpages.
-- [Parcel](https://parceljs.org/) - A "blazing" fast, zero configuration web application bundler.
-- PostCSS
-- fork of [hugo-pipes-parcel](https://github.com/budparr/hugo-pipes-parcel)
-- see package.json (lazysizes, quicklink)
-
 ## License
 
 Content is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/) unless stated otherwise.
