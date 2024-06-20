@@ -2,6 +2,7 @@
 title: "Yak Shaving"
 date: 2019-08-03T09:01:40+02:00
 draft: false
+tags: slang
 ---
 
 The term was coined by Carlin J. Vieri, a Ph.D. at MIT back in the 90s.

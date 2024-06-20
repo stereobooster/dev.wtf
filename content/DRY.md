@@ -1,5 +1,6 @@
 ---
 draft: true
+tags: [acronym, principle]
 ---
 
 > Duplication is far cheaper than the wrong abstraction.

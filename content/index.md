@@ -17,14 +17,20 @@ There are a lot of wikis, enciclopedias, dictionaries on the subject:
 - [Dictionary of Algorithms and Data Structures](https://xlinux.nist.gov/dads/)
 - [BABEL: A Glossary of Computer Oriented Abbreviations and Acronyms](https://www.arcelect.com/babel99.htm)
 - [The Jargon Lexicon](http://www.catb.org/~esr/jargon/html/go01.html)
-- [wikipedia](https://en.wikipedia.org/wiki/Main_Page) obviously
+- [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) obviously
 - [MDN](https://developer.mozilla.org/en-US/)
 - [From Nand to Tetris](https://www.nand2tetris.org/)
 - [Paradigms of Computer Programming – Fundamentals](https://www.edx.org/learn/computer-programming/universite-catholique-de-louvain-paradigms-of-computer-programming-fundamentals)
 - [Finite of Sense and Infinite of Thought](https://pron.github.io/posts/computation-logic-algebra-pt1)
 - [Parsing: a timeline](https://jeffreykegler.github.io/personal/timeline_v3)
 - [The Early Development of Programming Languages](http://bitsavers.trailing-edge.com/pdf/stanford/cs_techReports/STAN-CS-76-562_EarlyDevelPgmgLang_Aug76.pdf), by Knuth
+- [Awesome Cold Showers](https://github.com/hwayne/awesome-cold-showers)
 - etc.
+
+Not public domain:
+
+- [TechDictionary](https://www.techopedia.com/it-terms/a)
+- [DevX Technology Glossary](https://www.devx.com/terms/)
 
 ## Not NPOV
 

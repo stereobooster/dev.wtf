@@ -2,7 +2,7 @@
 title: "PSA"
 date: 2019-08-03T09:01:40+02:00
 draft: false
-tags: [internet-slang]
+tags: acronym
 ---
 
 Public Service Announcement
